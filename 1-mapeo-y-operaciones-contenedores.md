@@ -20,6 +20,7 @@ No puedes mapear puertos a un contenedor existente directamente después de su c
 docker run -d -p 8080:8080 -p 50000:50000 --name my-jenkins jenkins/jenkins:alpine3.18-jdk11
 ```
 # COLOCAR UNA CAPTURA DE PANTALLA  DEL ACCESO http://localhost:8080
+![Imagen](imagenes/localhost-8000.png)
 
 ### ¿Cómo obtener la contraseña solicitada?
 Para obtener la contraseña solicitada es necesario ingresar al contenedor.
@@ -53,6 +54,7 @@ docker exec -it my-jenkins ls -l
 ```
 
 # COLOCAR UNA CAPTURA DE PANTALLA
+![Imagen](imagenes/exec-it.png)
 
 ### Para ejecutar un shell interactivo en un contenedor de Docker especificado.
 El comando **docker exec** te permite acceder a la sesión shell de un contenedor en ejecución, estarás dentro del contenedor y podrás ejecutar comandos como si estuvieras en una terminal normal. 
@@ -87,6 +89,7 @@ Ejecutar
 whoami
 ```
 # COLOCAR UNA CAPTURA DE PANTALLA
+![Imagen](imagenes/exec-i.png)
 
 **Si se visualiza el mensaje command not found, considerar**
 El problema se debe a que no se ha asignado un terminal de salida al contenedor al ejecutar el comando. Cuando usas docker exec -i jenkins-server /bin/bash en Windows, el comando se ejecuta pero no hay un terminal asignado para mostrar la salida del comando ls.
@@ -115,6 +118,7 @@ cat /var/jenkins_home/secrets/initialAdminPassword
 ```
 
 ### Colocar una captura de pantalla de la ventana que aparece después de colocar la contraseña.
+![Imagen](imagenes/pasword.png)
 
 **Para este punto no es necesario continuar con la instalación de Jenkins**
 
