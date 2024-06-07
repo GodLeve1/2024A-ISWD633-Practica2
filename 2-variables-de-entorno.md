@@ -15,6 +15,7 @@ docker run -d --name my-nginx-container -e username=myuser -e role=admin nginx:a
 ```
 
 # CAPTURA CON LA COMPROBACIÓN DE LA CREACIÓN DE LAS VARIABLES DE ENTORNO DEL CONTENEDOR ANTERIOR
+![Imagen](imagenes/admin.png)
 
 ### Crear un contenedor con mysql:8 , mapear todos los puertos
 ```
