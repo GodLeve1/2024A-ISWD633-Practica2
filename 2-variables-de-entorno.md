@@ -23,13 +23,19 @@ docker run -d --name my-mysql-container -e MYSQL_ROOT_PASSWORD=my-secret-pw -p 3
 ```
 
 ### ¿El contenedor se está ejecutando?
-SI
+Si, debido a que ya esta configurada la variable de entorno
 
 ### Identificar el problema
-# COMPLETAR
+no se carga algunos archivos y se saltan
 
 ### Eliminar el contenedor creado con mysql:8 
-# COMPLETAR
+```
+docker stop my-mysql-container
+```
+```
+docker rm my-mysql-container
+
+```
 
 ### Para crear un contenedor con variables de entorno especificadas
 - Portabilidad: Las aplicaciones se vuelven más portátiles y pueden ser desplegadas en diferentes entornos (desarrollo, pruebas, producción) simplemente cambiando el archivo de variables de entorno.
